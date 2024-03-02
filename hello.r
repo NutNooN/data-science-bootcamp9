@@ -9,3 +9,8 @@ df <- read_csv("filename.csv")
 
 df %>%
   filter(col > 100)
+
+# plot new histogram
+library(ggplot2)
+ggplot(df2, aes(income)) +
+  geom_histogram()
